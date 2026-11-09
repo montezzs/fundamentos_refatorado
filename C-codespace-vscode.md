@@ -1,4 +1,4 @@
-# C — Codespace / VS Code
+# C - Codespace / VS Code
 
 **Objetivo:** configurar o editor de código, usar o terminal integrado e instalar as extensões essenciais.
 
@@ -43,13 +43,13 @@ Os dois jeitos de usar o VS Code neste curso partem de um repositório no GitHub
 > [!WARNING]
 > **Cota do Codespaces:** as horas gratuitas são contadas enquanto o codespace está ligado. Ao terminar, pare-o em [github.com/codespaces](https://github.com/codespaces) (menu **⋯ → Stop codespace**) e apague os que não usar mais. Ele também para sozinho após um tempo sem uso. Os limites atuais estão na [documentação de cobrança do GitHub](https://docs.github.com/pt/billing/managing-billing-for-your-products/managing-billing-for-github-codespaces/about-billing-for-github-codespaces). Estudantes podem pedir mais horas pelo [GitHub Education](https://education.github.com/pack).
 
-### Opção 1 — Abrir no Codespaces
+### Opção 1 - Abrir no Codespaces
 
 1. Na página do repositório, clique no botão verde **Code**.
 2. Aba **Codespaces → Create codespace on main**.
 3. Aguarde: o VS Code abre no navegador, com os arquivos do repositório à esquerda.
 
-### Opção 2 — Instalar e abrir no computador
+### Opção 2 - Instalar e abrir no computador
 
 1. Baixe e instale o VS Code em [code.visualstudio.com](https://code.visualstudio.com/).
 2. Instale o Git em [git-scm.com/downloads](https://git-scm.com/downloads), com as opções padrão.
@@ -132,7 +132,7 @@ A pré-visualização acompanha o que você digita.
 
 ---
 
-## C.9 Codespace pré-configurado (devcontainer) — opcional
+## C.9 Codespace pré-configurado (devcontainer) - opcional
 
 Toda vez que você cria um codespace, ele começa "limpo": é preciso instalar as extensões de novo. Um arquivo de configuração chamado **devcontainer** resolve isso: ele descreve o ambiente, e o Codespaces o monta automaticamente.
 
@@ -198,4 +198,4 @@ No VS Code local, esse arquivo é ignorado, a menos que você use a extensão De
 
 - [Documentação do VS Code](https://code.visualstudio.com/docs)
 - [Documentação do GitHub Codespaces](https://docs.github.com/pt/codespaces)
-- [Dev Containers — referência do `devcontainer.json`](https://containers.dev/implementors/json_reference/)
+- [Dev Containers - referência do `devcontainer.json`](https://containers.dev/implementors/json_reference/)
