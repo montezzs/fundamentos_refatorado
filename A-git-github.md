@@ -1,4 +1,4 @@
-# A — GitHub e Git
+# A - GitHub e Git
 
 **Objetivo:** criar um repositório do zero e dominar o ciclo de trabalho com branches, commits e Pull Requests.
 
@@ -52,7 +52,7 @@ Pronto: o repositório existe no GitHub, com a branch `main` e um primeiro commi
 
 Você precisa de um lugar com Git e terminal para editar o repositório. Há duas opções. **Escolha uma.**
 
-### Opção 1 — GitHub Codespaces (recomendada para começar)
+### Opção 1 - GitHub Codespaces (recomendada para começar)
 
 O **Codespaces** é um computador na nuvem, oferecido pelo GitHub, que abre no navegador com um editor (VS Code) e um terminal. O Git já vem instalado, o repositório já vem baixado e você já está autenticado: não é preciso instalar nada.
 
@@ -64,7 +64,7 @@ O **Codespaces** é um computador na nuvem, oferecido pelo GitHub, que abre no n
 
 Com o Codespaces aberto, **pule para a seção A.5**.
 
-### Opção 2 — No seu computador
+### Opção 2 - No seu computador
 
 **1. Instale o Git.** Baixe em [git-scm.com/downloads](https://git-scm.com/downloads) e instale com as opções padrão. No macOS, também pode rodar `xcode-select --install`.
 
@@ -141,7 +141,7 @@ Abrir o Pull Request e fazer o merge
 
 Vamos percorrê-lo criando um arquivo de anotações.
 
-### Passo 1 — Atualizar a main
+### Passo 1 - Atualizar a main
 
 ```bash
 git switch main
@@ -153,7 +153,7 @@ git pull origin main
 
 Faça isso **sempre antes de criar uma branch**, para começar da versão mais recente.
 
-### Passo 2 — Criar uma branch
+### Passo 2 - Criar uma branch
 
 ```bash
 git switch -c tarefa/primeiras-notas
@@ -169,7 +169,7 @@ A branch atual aparece com `*`.
 
 > Você pode encontrar em outros materiais `git checkout -b <nome>` (criar) e `git checkout <nome>` (trocar). Fazem o mesmo; `git switch` é a forma mais nova e mais clara.
 
-### Passo 3 — Alterar arquivos
+### Passo 3 - Alterar arquivos
 
 Crie um arquivo `notas.md` com algum texto. Pelo terminal:
 
@@ -185,7 +185,7 @@ git status
 
 O `git status` lista arquivos novos, modificados e o que já está preparado para o commit. Use-o o tempo todo.
 
-### Passo 4 — Registrar as alterações (add + commit)
+### Passo 4 - Registrar as alterações (add + commit)
 
 ```bash
 git add notas.md
@@ -201,7 +201,7 @@ Para ver o histórico:
 git log --oneline
 ```
 
-### Passo 5 — Enviar a branch (push)
+### Passo 5 - Enviar a branch (push)
 
 ```bash
 git push -u origin tarefa/primeiras-notas
@@ -209,7 +209,7 @@ git push -u origin tarefa/primeiras-notas
 
 Até aqui a branch só existia no seu computador; agora ela está no GitHub. O `-u` liga a branch local à remota, então nos próximos envios dessa branch basta `git push`.
 
-### Passo 6 — Abrir o Pull Request e fazer o merge
+### Passo 6 - Abrir o Pull Request e fazer o merge
 
 1. Abra a página do repositório no GitHub. Aparece um aviso amarelo com o botão **Compare & pull request**; clique nele. (Se não aparecer: aba **Pull requests → New pull request**, e escolha sua branch.)
 2. Confira que está pedindo para juntar **`tarefa/primeiras-notas` → `main`**.
@@ -218,7 +218,7 @@ Até aqui a branch só existia no seu computador; agora ela está no GitHub. O `
 5. Na aba **Files changed** dá para ver exatamente o que mudou. Em projetos da equipe, é aqui que os revisores comentam.
 6. Como o repositório é seu, você mesmo pode aprovar: clique em **Merge pull request → Confirm merge**. Depois, **Delete branch** para remover a branch do GitHub (o histórico continua guardado).
 
-### Passo 7 — Trazer o resultado de volta
+### Passo 7 - Trazer o resultado de volta
 
 O merge aconteceu no GitHub. Atualize seu computador:
 
@@ -243,8 +243,8 @@ O último comando apaga a branch local, que já foi incorporada. O ciclo recome�
 
 Nos projetos do laboratório o repositório não é seu, mas o ciclo é o mesmo. Muda só o começo:
 
-- **Se você foi adicionado como colaborador** (chega um convite por e-mail ou em [github.com/notifications](https://github.com/notifications) — aceite-o): clone o repositório da equipe e siga o ciclo A.5 normalmente. A diferença é que o merge do PR é feito por quem revisa, não por você.
-- **Se você não é colaborador**, o `push` dá erro `403 / Permission denied`. Nesse caso, crie um **fork** — uma cópia do repositório da equipe na sua conta — pelo botão **Fork** no GitHub. Clone o *seu* fork, trabalhe nele e, ao abrir o PR, escolha como destino a `main` do repositório original.
+- **Se você foi adicionado como colaborador** (chega um convite por e-mail ou em [github.com/notifications](https://github.com/notifications) - aceite-o): clone o repositório da equipe e siga o ciclo A.5 normalmente. A diferença é que o merge do PR é feito por quem revisa, não por você.
+- **Se você não é colaborador**, o `push` dá erro `403 / Permission denied`. Nesse caso, crie um **fork** - uma cópia do repositório da equipe na sua conta - pelo botão **Fork** no GitHub. Clone o *seu* fork, trabalhe nele e, ao abrir o PR, escolha como destino a `main` do repositório original.
 
 ---
 
@@ -278,9 +278,9 @@ A versão que veio da outra branch
 Para resolver no VS Code:
 
 1. Abra o arquivo. Acima do trecho aparecem as opções:
-   - **Accept Current Change** — fica a sua versão;
-   - **Accept Incoming Change** — fica a versão da outra branch;
-   - **Accept Both Changes** — ficam as duas.
+   - **Accept Current Change** - fica a sua versão;
+   - **Accept Incoming Change** - fica a versão da outra branch;
+   - **Accept Both Changes** - ficam as duas.
 2. Se nenhuma servir, apague os marcadores (`<<<<<<<`, `=======`, `>>>>>>>`) e escreva a versão correta à mão.
 3. Salve e finalize:
 
@@ -313,6 +313,6 @@ git push
 ## Links de apoio
 
 - [Documentação do GitHub em português](https://docs.github.com/pt/get-started)
-- [GitHub CLI — manual](https://cli.github.com/manual/)
+- [GitHub CLI - manual](https://cli.github.com/manual/)
 - Referência rápida de Git e GitHub (Sisproex)
-- [Oh Shit, Git!?!](https://ohshitgit.com/) — como desfazer situações comuns
+- [Oh Shit, Git!?!](https://ohshitgit.com/) - como desfazer situações comuns
