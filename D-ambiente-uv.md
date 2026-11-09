@@ -1,4 +1,4 @@
-# D — Ambiente de trabalho (uv)
+# D - Ambiente de trabalho (uv)
 
 **Objetivo:** criar um projeto Python com dependências isoladas e reproduzíveis usando o uv.
 
