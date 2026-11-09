@@ -1,4 +1,4 @@
-# B — Markdown e sintaxe
+# B - Markdown e sintaxe
 
 **Objetivo:** escrever documentação e materiais em Markdown.
 
